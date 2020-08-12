@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
+        <title>Formulari PICE</title>
     </head>
     <body>
-      
-        <p align="center"> 
-        <img src="logofondosocialeuropeo.png" alt="logo fondo social europeo" width="70"> 
-         <img src="logogarantiajuvenil.jpg" alt="logo garantía juvenil" width="70" >
-         <img src="logoministerio.jpg" alt="logo ministerio de empleo" width="70">
-        </p>
-        <h2 align="center">ANEXO 10</h2>
-        <h1 align="center">INFORME ORIENTACIÓN VOCACIONAL</h1>
-        <h3 align="center">PLAN DE CAPACITACIÓN 2020 | PICE</h3>
-
- <table border="1" width="900" align="center">
+       <table width="1045" align="center">
+           <tr>
+               <td><img src="/taules/logofondosocialeuropeo.png" alt="Logo Unión Europea" width="50" title="Logo Unión Europea"></td>
+               <td><img src="logogarantiajuvenil.jpg" alt="Logo Garantía Juvenil" width="100" title="Logo Garantía Juvenil"></td>
+               <td><img src="logoministerio.jpg"  alt="Logo Ministerio" width="200" title="Logo Ministerio del Interior"></td>
+           </tr>
+       </table>
+       <div align="center">
+            <h2>ANEXO 10</h2>
+            <h1>INFORME ORIENTACIÓN VOCACIONAL</h1>
+            <h3>PLAN DE CAPACITACIÓN 2020 | PICE</h3> 
+        </div>
+<form>
+ <table border="1" width="1045" align="center">
             <tr>
             <th align="center" colspan="2">DATOS BÁSICOS</th>
            </tr>
          <tr>
             <th width="300" align="left">NOMBRE <label for="nombre"></label></th>
-            <td width="400"><input type="text" size="90" id="nombre" ></td>
+            <td width="400"><input type="text" size="30" id="nombre" ></td>
          </tr>
           <tr>
             <th align="left">APELLIDOS <label for="apellidos"></label></th>
-            <td><input type="text" size="90" id="apellidos"></td>
+            <td><input type="text" size="60" id="apellidos"></td>
          </tr>
          <tr>
             <th align="left">FECHA DE NACIMIENTO <label for="fechadenacimiento"></label></th>
@@ -31,15 +36,15 @@
           </tr>
          <tr>
             <th align="left">NIF / NIE <label for="nif"></label></th>
-            <td><input type="text" id="nif" size="90"></td>
+            <td><input type="text" id="nif" size="20"></td>
           </tr>
         <tr>
             <th align="left">TELÉFONO <label for="telefono"></label></th>
-            <td><input type="tel" id="telefono" size="90"></td>
+            <td><input type="tel" id="telefono" size="20"></td>
         </tr>
         <tr>
             <th align="left">E-MAIL <label for="email"></label></th>
-            <td><input type="email" size="90" id="email"></td>
+            <td><input type="email" size="30" id="email"></td>
         </tr>
         <tr>
             <th align="left">CÁMARA DE COMERCIO</th>
@@ -64,16 +69,96 @@
             <th width="100">Competencias adquiridas durante la formación</th>
         </tr>
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;  </td>
+            <td width="50"><select width="50"> 
+                <option value =""></option>
+                <option value="Sin enseñanza primaria">Sin enseñanza primaria</option>
+                <option value="Enseñanza primaria">Enseñanza primaria</option>
+                <option value="1° 2° 3° 4° ESO">1° 2° 3° 4° ESO</option>
+                <option value="FP Básica">FP Básica</option>
+                <option value="FP grado medio">FP gradp medio</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)">Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)</option>
+                <option value="FP Grado Superior Diplomatura universitaria o similar (240ECTS)">FP Grado Superior Diplomatura universitaria o similar (240ECTS)</option>
+                <option value="Licenciatura universitaria o similar (más de 240ECTS)">Licenciatura universitaria o similar (más de 240ECTS)</option>
+                <option value="Enseñanzas doctorado">Enseñanzas doctorado</option>
+                <option value="Postgrado universitario">Postgrado universitario</option>
+            </select> </td>
+            <td><input type="text" size="30"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text">  </td>
         </tr>
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td width="50"><select width="50"> 
+                <option value =""></option>
+                <option value="Sin enseñanza primaria">Sin enseñanza primaria</option>
+                <option value="Enseñanza primaria">Enseñanza primaria</option>
+                <option value="1° 2° 3° 4° ESO">1° 2° 3° 4° ESO</option>
+                <option value="FP Básica">FP Básica</option>
+                <option value="FP grado medio">FP gradp medio</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)">Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)</option>
+                <option value="FP Grado Superior Diplomatura universitaria o similar (240ECTS)">FP Grado Superior Diplomatura universitaria o similar (240ECTS)</option>
+                <option value="Licenciatura universitaria o similar (más de 240ECTS)">Licenciatura universitaria o similar (más de 240ECTS)</option>
+                <option value="Enseñanzas doctorado">Enseñanzas doctorado</option>
+                <option value="Postgrado universitario">Postgrado universitario</option>
+            </select> </td>
+            <td><input type="text" size="30"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text">  </td>
         </tr>
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td width="50"><select width="50"> 
+                <option value =""></option>
+                <option value="Sin enseñanza primaria">Sin enseñanza primaria</option>
+                <option value="Enseñanza primaria">Enseñanza primaria</option>
+                <option value="1° 2° 3° 4° ESO">1° 2° 3° 4° ESO</option>
+                <option value="FP Básica">FP Básica</option>
+                <option value="FP grado medio">FP gradp medio</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)">Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)</option>
+                <option value="FP Grado Superior Diplomatura universitaria o similar (240ECTS)">FP Grado Superior Diplomatura universitaria o similar (240ECTS)</option>
+                <option value="Licenciatura universitaria o similar (más de 240ECTS)">Licenciatura universitaria o similar (más de 240ECTS)</option>
+                <option value="Enseñanzas doctorado">Enseñanzas doctorado</option>
+                <option value="Postgrado universitario">Postgrado universitario</option>
+            </select> </td>
+            <td><input type="text" size="30" ></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text">  </td>
         </tr>
         <tr>
-            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+            <td width="50"><select width="50"> 
+                <option value =""></option>
+                <option value="Sin enseñanza primaria">Sin enseñanza primaria</option>
+                <option value="Enseñanza primaria">Enseñanza primaria</option>
+                <option value="1° 2° 3° 4° ESO">1° 2° 3° 4° ESO</option>
+                <option value="FP Básica">FP Básica</option>
+                <option value="FP grado medio">FP gradp medio</option>
+                <option value="Bachillerato">Bachillerato</option>
+                <option value="Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)">Enseñanza postsecundaria no terciaria (certificado profesionalidad nivel 3)</option>
+                <option value="FP Grado Superior Diplomatura universitaria o similar (240ECTS)">FP Grado Superior Diplomatura universitaria o similar (240ECTS)</option>
+                <option value="Licenciatura universitaria o similar (más de 240ECTS)">Licenciatura universitaria o similar (más de 240ECTS)</option>
+                <option value="Enseñanzas doctorado">Enseñanzas doctorado</option>
+                <option value="Postgrado universitario">Postgrado universitario</option>
+            </select> </td>
+            <td><input type="text" size="30"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            
+            <td><input type="text"></td>
+            <td><input type="text">  </td>
         </tr>
     </table> <br> <br>
 
@@ -83,21 +168,21 @@
         </tr>
         <tr>
             <th rowspan="4" width="400" colspan="3">Tipo desempleo:</th>
-            <td >Inactivo (desembleado no inscrito en el SEPE)</td>
-            <td width="60" colspan="2">&nbsp;</td>
+            <td >Inactivo (desembleado no inscrito en el SEPE) </td>
+            <td width="60" align="center" colspan="2"><input type="radio" name="tipodesempleo" value="1"></td>
         </tr>
         <tr>
             <td rowspan="3">Desempleado (inscrito en SEPE)</td>
-            <td>Menos de 6 meses inscrito</td>
-            <td colspan="1">&nbsp;</td>
+            <td>Menos de 6 meses inscrito </td>
+            <td colspan="1" align="center"><input type="radio" name="tipodesempleo" value="2"></td>
         </tr>
         <tr>
             <td>Entre 6 y 12 meses inscritos</td>
-            <td colspan="1">&nbsp;</td>
+            <td colspan="1" align="center"><input type="radio" value="3" name="tipodesempleo"></td>
         </tr>
         <tr>
-            <td>Más de 12 meses inscrito</td>
-            <td colspan="1">&nbsp;</td>
+            <td>Más de 12 meses inscrito </td>
+            <td colspan="1" align="center"><input type="radio" value="4" name="tipodesempleo"></td>
         </tr>
        
        
@@ -114,18 +199,46 @@
             <th width="10">Motivo de la finalización</th>
         </tr>
         <tr>
-            <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+            <td><input type="text"></td>
+             <td><input type="text"></td> 
+             <td><input type="text"></td> 
+             <td><input type="date"></td>
+             <td><input type="date"></td>
+             <td><input type="text"></td> 
         </tr>
         <tr>
-            <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
-        
+            <td><input type="text"></td>
+             <td><input type="text"></td> 
+             <td><input type="text"></td> 
+             <td><input type="date"></td>
+             <td><input type="date"></td>
+             <td><input type="text"></td> 
         </tr>
         <tr>
-            <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+            <td><input type="text"></td>
+             <td><input type="text"></td> 
+             <td><input type="text"></td> 
+             <td><input type="date"></td>
+             <td><input type="date"></td>
+             <td><input type="text"></td> 
         </tr>
         <tr>
-            <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+            <td><input type="text"></td>
+             <td><input type="text"></td> 
+             <td><input type="text"></td> 
+             <td><input type="date"></td>
+             <td><input type="date"></td>
+             <td><input type="text"></td> 
         </tr>
+        <tr>
+            <td><input type="text"></td>
+             <td><input type="text"></td> 
+             <td><input type="text"></td> 
+             <td><input type="date"></td>
+             <td><input type="date"></td>
+             <td><input type="text"></td> 
+        </tr>
+
 
         <tr>
             <th align="center" colspan="6">FORMACIÓN PRÁCTICA</th>
