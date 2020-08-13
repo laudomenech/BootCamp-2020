@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taules amb estils css</title>
+        <style type="text/css">
+        
+        body{
+            background-color:seashell;
+        }
+        table{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color:whitesmoke;
+        }
+        tr{
+            height: 45px;
+        }
+        
+        .title{
+            font-size: 17pt;
+            background-color:#698396 ;
+            color: whitesmoke;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        .estacions{
+            text-align: center;
+        }
+        .any{
+            background-color:#AE8A8C ;
+        }
+        
+
+                
+    </style>
+    </head>
+    <body>
+       <table width="80%" border="1" align="center"> <!--dividim l'estructura de la taula per despres cambiar aspecte-->
+            <thead>
+               <tr>
+                   <th class="title" colspan="11">VENDES 2019 - 2020</th>
+               </tr>
+               <tr>
+                   <th width="150" colspan="2"></th>
+                   <th width="300" colspan="4" class="any">Any 2019</th>
+                   <th width="300" colspan="4" class="any">Any 2020</th>
+                   <th rowspan="2" width="80">Totals per ciutats</th>
+               </tr>
+               <tr class="estacions">
+                   <th width="150" colspan="2"></td>
+                   <td width="100">Primavera</td>
+                   <td width="100">Estiu</td>
+                   <td width="100">Tardor</th>
+                   <td width="100">Hivern</td>
+
+                   
+                   <td width="100">Primavera</td>
+                   <td width="100">Estiu</td>
+                   <td width="100">Tardor</td>
+                   <td width="100">Hivern</td>
+               </tr>
+           </thead>
+           <tbody>
+               <tr class="barcelona">
+                   <th rowspan="3">Barcelona</th>
+                   <td class="ciutats">Barcelona</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+               </tr>
+               <tr class="barcelona">
+                   <td class="ciutats">Hospitalet</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+                   <td>X</td>
+               </tr>
+               <tr class="barcelona">
+                <td class="ciutats">Terrassa</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+               </tr>
+
+               <tr>
+                   <th rowspan="3">Girona</th>
+                   <td class="ciutats">Girona</td>
+                   <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+               </tr>
+               <tr>
+                <td class="ciutats">Figueres</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <td class="ciutats">Palamós</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Tarragona</th>
+                <td class="ciutats">Salou</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <td class="ciutats">Reus</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <td class="ciutats">Cambrils</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Lleida</th>
+                <td class="ciutats">Tárrega</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <td class="ciutats">Mollerusa</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+            <tr>
+                <td class="ciutats">Lérida</td>
+                <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+                 <td>X</td>
+            </tr>
+           </tbody>
+           <tfoot>
+               <tr>
+                   <th colspan="2">Totals</th>
+                   <td>A</td>
+                   <td>A</td>
+                   <td>A</td>
+                   <td>A</td>
+
+                   <td>A</td>
+                   <td>A</td>
+                   <td>A</td>
+                   <td>A</td>
+                   <td rowspan="2"></td>
+               </tr>
+               <tr>
+                <th colspan="2">Totals Anuals</th>
+                <td>B</td>
+                <td>B</td>
+                <td>B</td>
+                <td>B</td>
+
+                <td>B</td>
+                <td>B</td>
+                <td>B</td>
+                <td>B</td>
+                
+            </tr>
+
+           </tfoot>
+
+
+
+       </table>
+    </body>
+</html>
