@@ -1,326 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Taules amb estils css</title>
-        <style type="text/css">
-        
-        body{
-            background-image: url(../CSS/etiquetescss/backgroundlines.jpg); 
-            background-repeat: repeat-y;
-            background-size:100%;
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etiquetes CSS</title>
 
-        }
-        table{
-            border-spacing: 0pt;
-            border-collapse:collapse;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        tr{
-            height: 45px;
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <style type="text/css">
+       body{
+           background: url(backgroundgreen.jpg);
+           background-size: 100%;
+           background-attachment: scroll;
+       }
+         div{
+           background-color: rgba(0, 0, 0, 0.822);
+           margin-top: 200px; margin-left: 200px; margin-right: 200px; margin-bottom: 0pc;
+       }
+        img{
+            width: 599px;
+            padding: 2px;
+            display: block;
+            margin-top: 0; margin-left: 200px; margin-right: 200px; margin-bottom: 0pc;
+            margin: auto;
+           
         }
         h1{
-            padding: 40px;
-            font-size: 40pt;
-            text-align: center;
-            margin-bottom: 0px;
-        }
-        h2{
-            text-align: left;
-            padding: 40px;
-            
-
-        }
-        div{
-            background-color: #f7f7f7cc;
-            margin: 0px 200px 0px 200px;
+           text-align: center;
+           font-family: verdana, arial;
+           font-style: italic;
+           font-weight: bold;
+           font-size: 3vw;
+           color: #d6d6d6 ;
+           padding:40px;
         }
         p{
-            padding: 20px;
+            text-align: justify;
+            color: #d6d6d6 ;
+            padding:40px;
+            line-height: 120%;
+            font-size: 20pt;
+            text-indent: 50px;
         }
-        
-        .title{
-            font-size: 17pt;
-            background-color:#2f3436 ;
-            color: whitesmoke;
-            font-style: italic;
-            font-weight: lighter;
-        }
-        .estacions{        
-            text-align: center;
-            background-color: #c2c2c2;
-            
-        }
-        .any{
-            font-size: 15pt;
-            font-weight: normal;
-            color:whitesmoke;
-            background-color:#959ea1 ;
-        }
-        .ciutats{
-            text-align: center;
-            border:none;
-         
-        }
-        .totals{
-            font-size: 12pt;
-            color: whitesmoke;
-            font-style: italic;
-            font-weight: lighter;
-            background-color:#67677e;
-            font-weight: 400;
-            text-align: center;
-
-        }
-        .barcelona{
-            
-            background-color: #ceecd98a;
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(90deg, #97D8AE, #d4e9c8);
-        }
-        .girona{ 
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(90deg, #C3E5AE, #f0e7ca);
-        }
-        .tarragona{
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(90deg, #F1E1A6, #f8dada);
-        }
-        .lleida{
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(90deg, #fff1f1, #cdcdf0);
-        }
-        th, td {
-            padding:13px
-        }
-                
-    </style>
+       
+        </style>
     </head>
     <body>
-      <div>
-       <h1>Empresa blabla</h1>
-       <h2>Taule de Vendes</h2>
-       
-        <table width="60%" border="1" align="center"> <!--dividim l'estructura de la taula per despres cambiar aspecte-->
-        <colgroup>
-            <col>
-        
-        </colgroup>    
-        
-        <thead>
-               <tr>
-                   <th class="title" colspan="11">VENDES 2019 - 2020</th>
-               </tr>
-               <tr>
-                   <th width="150" colspan="2" class="any"></th>
-                   <th width="300" colspan="4" class="any">Any 2019</th>
-                   <th width="300" colspan="4" class="any">Any 2020</th>
-                   <th rowspan="2" width="150" class="totals">Totals per ciutats</th>
-               </tr>
-               <tr class="estacions">
-                   <th width="150" colspan="2"></td>
-                   <td width="100">Primavera</td>
-                   <td width="100">Estiu</td>
-                   <td width="100">Tardor</th>
-                   <td width="100">Hivern</td>
+    <div>
+       <h1>PROPIETATS DEL CSS</h1>
+       <img src="sewing.jpg" alt="cosiendo" media="(max-width:400px)">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, a fuga aut illo reprehenderit possimus quis voluptas, distinctio laudantium, repellendus minima. Ea quasi ut similique numquam quis voluptas molestiae sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magni quas dolorem. Nulla, praesentium iste! Voluptatem culpa nobis modi maxime labore, voluptates iusto fugit possimus eaque, quis, officiis repellendus reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius, cum unde voluptatem doloribus molestiae quaerat provident nobis veniam soluta cupiditate ipsam, ullam commodi quae. Corrupti illum cumque atque recusandae!
 
-                   
-                   <td width="100">Primavera</td>
-                   <td width="100">Estiu</td>
-                   <td width="100">Tardor</td>
-                   <td width="100">Hivern</td>
-               </tr>
-           </thead>
-           <tbody>
-               <tr class="barcelona">
-                   <th rowspan="3">Barcelona</th>
-                   <td class="ciutats">Barcelona</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td class="totals">X</td>
-               </tr>
-               <tr class="barcelona">
-                   <td class="ciutats">Hospitalet</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td>X</td>
-                   <td class="totals">X</td>
-               </tr>
-               <tr class="barcelona">
-                <td class="ciutats">Terrassa</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td class="totals">X</td>
-               </tr>
-
-               <tr class="girona">
-                   <th rowspan="3">Girona</th>
-                   <td class="ciutats">Girona</td>
-                   <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td class="totals">X</td>
-               </tr>
-               <tr class="girona">
-                <td class="ciutats">Figueres</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="girona">
-                <td class="ciutats">Palamós</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="tarragona">
-                <th rowspan="3">Tarragona</th>
-                <td class="ciutats">Salou</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="tarragona">
-                <td class="ciutats">Reus</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="tarragona">
-                <td class="ciutats">Cambrils</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="lleida">
-                <th rowspan="3">Lleida</th>
-                <td class="ciutats">Tárrega</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="lleida">
-                <td class="ciutats">Mollerusa</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-            <tr class="lleida">
-                <td class="ciutats">Lérida</td>
-                <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td>X</td>
-                 <td class="totals">X</td>
-            </tr>
-           </tbody>
-           <tfoot class="totals">
-               <tr >
-                   <th colspan="2">Totals</th>
-                   <td>A</td>
-                   <td>A</td>
-                   <td>A</td>
-                   <td>A</td>
-
-                   <td>A</td>
-                   <td>A</td>
-                   <td>A</td>
-                   <td>A</td>
-                   <td rowspan="2"></td>
-               </tr>
-               <tr>
-                <th colspan="2">Totals Anuals</th>
-                <td>B</td>
-                <td>B</td>
-                <td>B</td>
-                <td>B</td>
-
-                <td>B</td>
-                <td>B</td>
-                <td>B</td>
-                <td>B</td>
-                
-                    
-        </tr>
-
-           </tfoot>
-
-
-
-       </table>
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio nunc, volutpat sit amet ligula vel, aliquam hendrerit turpis. Integer sed feugiat erat, ac lobortis leo. Donec ornare porta lorem et mattis. Quisque ut magna ante. Nam fringilla ligula ac neque viverra ornare. Cras tempus lectus diam, a tincidunt felis porta eu. Phasellus at ligula arcu.
+       </p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ratione nisi atque, et fugiat, itaque exercitationem placeat, maiores numquam molestias ullam nulla sit odio temporibus eius earum explicabo accusantium nemo.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio nunc, volutpat sit amet ligula vel, aliquam hendrerit turpis. Integer sed feugiat erat, ac lobortis leo. Donec ornare porta lorem et mattis. Quisque ut magna ante. Nam fringilla ligula ac neque viverra ornare. Cras tempus lectus diam, a tincidunt felis porta eu. Phasellus at ligula arcu.
 
         Aenean sollicitudin massa id est rutrum, in egestas diam placerat. Nullam sed ex et felis luctus dapibus eget ut elit. Integer a porta urna. Integer maximus facilisis consequat. Ut et neque non velit ultricies tincidunt. Donec dapibus, risus eget hendrerit aliquam, metus tellus dignissim nibh, at finibus nulla elit id tellus. Ut congue bibendum consectetur. Pellentesque consectetur lorem vel diam posuere, sed blandit risus tristique.
         
@@ -382,8 +113,9 @@
         
         Praesent gravida egestas bibendum. Mauris quis mi vitae odio imperdiet facilisis laoreet ut dui. Vivamus id blandit neque. Phasellus nisi enim, sodales nec diam non, ullamcorper posuere lorem. Ut elementum, lorem laoreet mattis vehicula, erat odio aliquam felis, et maximus mauris mi eu diam. Ut sit amet ante ex. Praesent vehicula vehicula tellus quis posuere. Donec id euismod eros.
         
-        Sed vitae rhoncus turpis, ac dapibus tellus. Nullam suscipit volutpat nulla ac euismod. Ut eget sapien et metus ullamcorper euismod. Proin a tempor libero, vel varius justo. Duis faucibus libero vitae nibh facilisis suscipit. Aenean vehicula ultricies tristique. Pellentesque nec nibh interdum, iaculis nulla in, sollicitudin nisl. In volutpat, tellus vitae viverra tempus, turpis nunc pellentesque ex, sed posuere nulla nunc sit amet elit. Donec nec lacinia mi, ac volutpat est. Praesent porttitor elit et eros efficitur dictum. Quisque sed velit quis purus elementum sollicitudin.
-       </p>
+        Sed vitae rhoncus turpis, ac dapibus tellus. Nullam suscipit volutpat nulla ac euismod. Ut eget sapien et metus ullamcorper euismod. Proin a tempor libero, vel varius justo. Duis faucibus libero vitae nibh facilisis suscipit. Aenean vehicula ultricies tristique. Pellentesque nec nibh interdum, iaculis nulla in, sollicitudin nisl. In volutpat, tellus vitae viverra tempus, turpis nunc pellentesque ex, sed posuere nulla nunc sit amet elit. Donec nec lacinia mi, ac volutpat est. Praesent porttitor elit et eros efficitur dictum. Quisque sed velit quis purus elementum sollicitudin.</p>
     </div>
+   
     </body>
+
 </html>
