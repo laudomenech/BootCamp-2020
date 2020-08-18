@@ -7,9 +7,11 @@ body{
 #cabecera{
     color: white;
     background-color: rgb(103, 184, 92);
-    border-radius: 6pt;
-
-    
+    border-radius: 6pt;   
+}
+#listadoestilos{
+        width: 200px;
+        float: left
 }
 ul{
     position: relative; 
@@ -30,13 +32,11 @@ a{
     color: black;
 }
 a:hover{
-    font-style: ;
+    text-decoration: none;
 }
-
-
-
 #cuerpo{
-    margin: 10px;
+    padding: 10px;
+    margin: 0 210px;
     
 }
 #barralateral{
@@ -44,10 +44,9 @@ a:hover{
     border-radius: 6pt;
     background-color: rgb(59, 157, 202);
     width: 180px;
-    height: 330px;
+    height: 340px;
     padding: 10px;
-    position: absolute; right: 0; top: 80px;
-    margin: 20px;
+    position: absolute; right: 0; top: 0px; bottom: 0;
 
 }
 #piedepagina{

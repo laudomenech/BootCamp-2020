@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            #pestaña1{  
+                width: 300px;
+                height: 300px;
+                background-color: hotpink;
+                position: absolute; top: -250px; left: 20%;
+                margin: auto; margin-left: -150px;
+                text-align: center; 
+                border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+                transition: top 1.5s ease-out;
+            }
+            #pestaña1:hover{
+                position: absolute; top: 0px;
+            }
+            #pestaña2{
+                width: 300px;
+                height: 300px;
+                background-color: indigo;
+                position: absolute; top: -250px; left: 50%;
+                margin: auto; margin-left: -150px;
+                text-align: center;
+                border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+                transition: top 1.5s ease-out;
+            }
+            #pestaña2:hover{
+                position: absolute; top: 0px;
+            }
+            #pestaña3{
+                width: 300px;
+                height: 300px;
+                background-color: lawngreen;
+                position: absolute; top: -250px; left: 80%;
+                margin: auto; margin-left: -150px;
+                text-align: center;
+                border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+                transition: top 1.5s;
+            }
+            #pestaña3:hover{
+                position: absolute; top: 0px;
+            }
+            #pestaña4{
+                width: 300px;
+                height: 200px;
+                background-color: mediumaquamarine;
+                position: absolute; right: -250px; top: 50%; 
+                border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+                margin-top: -150px;
+                transition: right 1.5s;
+            }
+            #pestaña4:hover{
+                position: absolute; right: 0px;
+            }
+            p{
+                position: absolute; bottom: 0px; right: 40%;
+                color: rgb(27, 27, 27);
+                font-size: 16pt;
+            }
+
+            #pestaña5{
+                width: 300px;
+                height: 200px;
+                background-color: brown;
+                position: absolute; right: -250px; top:25%;
+                border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+                margin-top: -150px;
+                transition: right 1.5s;
+            }
+            #pestaña5:hover{
+                position: absolute; right: 0;
+            }
+            #pestaña6{
+                width: 300px;
+                height: 200px;
+                background-color: rgb(65, 7, 34);
+                position: absolute; right: -250px; top:75%;
+                border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+                margin-top: -150px;
+                transition: right 1.5s;
+            }
+            #pestaña6:hover{
+                position: absolute; right: 0;
+            }
+            #pestaña7{
+                width: 300px;
+                height: 200px;
+                background-color: coral;
+                position: absolute; left: -250px ; top: 25%;
+                border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+                margin-top:-150px;
+                transition: left 1.5s;
+            }
+            #pestaña7:hover{
+                position: absolute; left: 0;
+            }
+            #pestaña8{
+                width: 300px;
+                height: 200px;
+                background-color: rgb(9, 73, 33);
+                position: absolute; left: -250px ; top: 50%;
+                border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+                margin-top:-150px;
+                transition: left 1.5s;
+            }
+            #pestaña8:hover{
+                position: absolute; left: 0;
+            }
+            #pestaña9{
+                width: 300px;
+                height: 200px;
+                background-color: rgb(167, 128, 21);
+                position: absolute; left: -250px ; top: 75%;
+                border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+                margin-top:-150px;
+                transition: left 1.5s;
+            }
+            #pestaña9:hover{
+                position: absolute; left: 0;
+            }
+            #pestaña10{
+                width: 300px;
+                height: 300px;
+                background: cyan;
+                position: absolute; bottom: -250px; left: 20%;
+                margin: auto; margin-left: -150px;
+                border-top-right-radius: 20px; border-top-left-radius: 20px;
+                transition: bottom 1.5s;
+            }
+            #pestaña10:hover{
+                position: absolute; bottom: 0;
+            }
+            #pestaña11{
+                width: 300px;
+                height: 300px;
+                background-color: rgb(21, 31, 29);
+                position: absolute; bottom: -250px; left: 50%;
+                margin: auto; margin-left: -150px;
+                text-align: center;
+                border-top-right-radius: 20px; border-top-left-radius: 20px;
+                transition: bottom 1.5s ease-out;
+            }
+            #pestaña11:hover{
+                position: absolute; bottom: 0px;
+            }
+            #pestaña12{
+                width: 300px;
+                height: 300px;
+                background-color: rgb(2, 143, 199);
+                position: absolute; bottom: -250px; left: 80%;
+                margin: auto; margin-left: -150px;
+                text-align: center;
+                border-top-right-radius: 20px; border-top-left-radius: 20px;
+                transition: bottom 1.5s ease-out;
+            }
+            #pestaña12:hover{
+                position: absolute; bottom: 0px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="pestaña1"><p>Pestaña 1</p> </div>
+        <div id="pestaña2"><p>Pestaña 2</p></div>
+        <div id="pestaña3"><p>Pestaña 3</p></div>
+        <div id="pestaña4"><p>Pestaña 4</p></div>
+        <div id="pestaña5"><p>Pestaña 5</p></div>
+        <div id="pestaña6"><p>Pestaña 6</p></div>
+        <div id="pestaña7"><p>Pestaña 7</p></div>
+        <div id="pestaña8"><p>Pestaña 8</p></div>
+        <div id="pestaña9"><p>Pestaña 9</p></div>
+        <div id="pestaña10"><p>Pestaña 10</p></div>
+        <div id="pestaña11"><p>Pestaña 11</p></div>
+        <div id="pestaña12"><p>Pestaña 12</p></div>
+      
+
+     
+    </body>
+</html>

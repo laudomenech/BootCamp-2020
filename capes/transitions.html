@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+        img{
+            width: 600px;
+            height: 400px;
+            display: block;
+            position: absolute; top: 50%; left: 50%; 
+            margin-left: -300px; margin-top: -200px;
+        }
+        #capa1{
+            background-color: rgb(194, 194, 194);
+            width: 400px;
+            height: 300px;
+            position: absolute; top: 50%; left:50%;
+            border: 2pt solid black;
+            box-sizing: border-box;
+            transition: top 2s ease, color 2s ease, left 2s ease;
+        }
+        #capa1:hover{
+            position: absolute; top: 75%; left:75%;
+            color: rgba(196, 4, 4, 0.404);
+        }
+        #capa2{
+            background-color: rgb(179, 190, 23);
+            width: 400px;
+            height: 300px;
+            position: absolute; top: 50%; right:50%;
+            border: 2pt solid black;
+            box-sizing: border-box;
+            transition: top 2s ease, right 2s ease, color 2s;
+        }
+        #capa2:hover{
+            position: absolute; top: 75%; right:75%;
+            color: rgba(255, 235, 205, 0.404);
+        }
+
+        #capa3{
+            background-color: rgb(23, 190, 176);
+            width: 400px;
+            height: 300px;
+            position: absolute; bottom: 50%; right:50%;
+            border: 2pt solid black;
+            box-sizing: border-box;
+            transition: bottom 2s ease, right 2s ease, color, 2s;
+        }
+        #capa3:hover{
+            position: absolute; bottom: 75%; right:75%;
+            color: rgba(255, 235, 205, 0.404);
+        }
+        #capa4{
+            background-color: rgb(95, 23, 190);
+            width: 400px;
+            height: 300px;
+            position: absolute; bottom: 50%; left:50%;
+            border: 2pt solid black;
+            box-sizing: border-box;
+            transition: bottom 2s ease, left 2s;
+        }
+        #capa4:hover{
+            position: absolute; bottom: 75%; left:75%;
+            color: rgba(255, 235, 205, 0.404);
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="fons">
+            <img src="paisaje.jpg">
+        </div>
+            <div id="capa1"></div>
+            <div id="capa2"></div>
+            <div id="capa3"></div>
+            <div id="capa4"></div>
+      
+    </body>
+</html>

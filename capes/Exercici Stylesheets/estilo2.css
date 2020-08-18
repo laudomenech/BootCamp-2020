@@ -1,0 +1,26 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    line-height: 26px;
+    background-color: rgb(206, 94, 66);
+}
+#cuerpo{
+    width: 900px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+#cabecera{
+    color: white;
+}
+#listadoestilos{
+position: absolute; right: 0; top: 50%;
+}
+h1{
+    font-size: 27pt;
+}
+#barralateral{
+    background-color: rgb(209, 123, 107);
+    margin: auto;
+}
