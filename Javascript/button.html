@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style> 
+            input{
+                width: 400px;
+                height: 200px;
+                background-color: rgb(139, 67, 67);
+                border: 2px solid black;
+                color:white;
+                transition: 1s;
+                font-size: 18pt;
+                cursor: pointer;
+            }
+            input:hover{
+                background-color: white;
+                color:rgb(168, 82, 82) ;
+                border: 2px solid black;
+            }
+
+        </style>
+        <script> //Augmenta un valor cada cop que es clica el butó
+            var quantitat=0; //es important posar valors per defecte a les variables sense número apareix error NaN(not a number)
+            function contar(message){
+                //quantitat=1;
+                quantitat=quantitat+1; //autoasignació, principal de la programació, també es pot escriure: quantitat +=1 o quantitat ++
+                window.alert(quantitat)
+            }
+        </script>
+    </head>
+    <body>
+       <input type="button" value="Clica aquí" onclick="contar('message')">
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            input{
+                width: 300px;
+                height: 200px;
+                background-color: rgb(21, 51, 184);
+                border: 2px solid black;
+                color:white;
+                transition: 1s;
+                font-size: 18pt;
+                cursor: pointer;
+            }
+            input:hover{
+                background-color: rgb(158, 176, 226);
+                color: rgb(21, 51, 184);
+            }
+        </style>
+        <script>
+            function mostrar_data(){
+                var d=new Date();
+                var dia=d.getDate();
+                var mes=d.getMonth();
+                var any=d.getFullYear();
+                var hora=d.getHours();
+                var minuts=d.getMinutes();
+                var segons=d.getSeconds();
+                var milisegons=d.getUTCMilliseconds();
+                window.alert ("Data: "+dia +" / "+mes +" / " + any +" Hora: " +hora + ":" +minuts +":" +segons +":" +milisegons);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Data i hora" onclick="mostrar_data('message')">
+    </body>
+</html>

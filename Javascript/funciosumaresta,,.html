@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function sumar (num1,num2){
+                window.alert(num1+num2);
+            }
+
+            function restar (num1,num2){
+                window.alert(num1-num2);
+            }
+            function multiplicar (num1,num2){
+                window.alert(num1*num2);
+            }
+            function dividir (num1, num2){
+                window.alert(num1/num2);
+            }
+        </script>
+
+        
+
+    </head>
+    <body>
+        <input type="button" value="10+2" onclick="sumar(10,2)">
+        <input type="button" value="Restar" onclick="restar(document.getElementById('numero1').value,document.getElementById('numero2').value)">
+        <input type="button" value="10*2" onclick="multiplicar(10,2)">
+        <input type="button" value="10/2" onclick="dividir(10,2)"> <br><br>
+
+
+        Numero 1:
+        <input type="text" name="numero1" id="numero1"><br><br>
+
+        Numero 2:
+        <input type="text" name="numero2" id="numero2"><br>
+
+
+    </body>
+</html>

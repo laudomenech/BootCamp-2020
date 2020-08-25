@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            input{
+                width: 300px;
+                height: 100px;
+                background-color: teal;
+                color: white;
+                transition: 1s;
+                border: 1px solid black; border-radius: 400px;
+                font-size: 17pt;
+            }
+            input:hover{
+                background-color: white;
+                color: teal;
+            }
+            input:selected{
+                border: 0;
+            }
+        </style>
+        <script>
+            var valor=11;
+            function restar(message) {
+                valor=valor-1
+                window.alert(valor)
+            }
+            var doble=0.5;
+            function doblar(message) {
+                doble=doble*2;
+                window.alert(doble)
+            }
+            var meitat=1024;
+            function partir(message){
+                meitat=meitat/2;
+                window.alert(meitat)
+            }
+        </script>
+    </head>
+    <body>
+       <input type="button" value="Desde 10 a 0!" onclick="restar('message')">
+       <input type="button" value="Dobles" onclick="doblar('message')">
+       <input type="button" value="Meitats" onclick="partir('meitat')">
+    </body>
+</html>
