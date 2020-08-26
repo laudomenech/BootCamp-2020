@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        body{
+            background-color: rgba(177, 107, 2, 0.479);
+        }
+        h1{
+            color: rgb(78, 54, 22);
+            text-align: center; padding: 40px; background-color: rgba(214, 170, 113, 0.719);
+        }
+        .edat{
+            align-items: center; justify-content: center; display: flex;
+        }
+        #text_edat{
+            margin: 10px; color: white;
+        }
+        #button{
+            position: absolute; left: 50%; width: 300px; margin-left: -150px; margin-top: 30px; height: 60px;
+        }
+        .casella{
+            border: 2px solid white;
+            height: 250px; padding: 30px; width: 400px; margin: 20px;
+            position: absolute; left: 50%; margin-left: -200px;
+            background-color: rgba(190, 115, 10, 0.466);
+            -webkit-box-shadow: 9px 6px 17px 2px rgba(41,41,41,0.79);
+-moz-box-shadow: 9px 6px 17px 2px rgba(41,41,41,0.79);
+box-shadow: 9px 6px 17px 2px rgba(41,41,41,0.79);
+        }
+
+    </style>
+    <script>
+        function compr_edat(){
+            var edat=document.getElementById("text_edat").value;
+            if ((edat>=18)&&(edat<=25)){
+                alert("Welcome to this course, I hope you'll enjoy")
+            }
+        }
+
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Doble Comprovació en Javascript</h1>
+    <div class="casella col-sm">
+        <div class="edat">
+            <label for="text_edat">Edat: </label>
+            <input type="number" id="text_edat">
+        </div>
+        <div>
+            <input type="button" id="button" value="Comprova-ho!" onclick="compr_edat">
+        </div>
+   </div>
+  </body>
+</html>

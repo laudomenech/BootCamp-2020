@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function comprovar(){
+                var edad=  parseInt(document.getElementById("edad").value);
+                if(edad<18){
+                    window.alert("Edad no suficient, prova-ho dintre d'uns anys.");
+                }
+                else{
+                    alert("Success!!!!!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Edad : </label>
+        <input type="number" id="edad">
+        <input type="button" value="Comprova" onclick="comprovar()">
+    </body>
+</html>

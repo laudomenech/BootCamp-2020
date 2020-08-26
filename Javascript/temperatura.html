@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #resultat{
+                background-color: rgb(88, 113, 194);
+                width: 400px; height: 200px;
+                position: absolute; left: 50%;
+                margin-left: -200px;
+                padding: 50px;
+            }
+            #boto{
+                width: 80px; height: 40px; background-color: rgb(102, 102, 102);
+                border: 1px solid white;
+                color: white;
+                font-weight: 600;
+            }
+            #tot{
+                background-color: rgba(46, 143, 150, 0.582);
+                padding: 30px;
+                text-align: center;
+                width: 800px; height: 400px;
+                position: absolute; left: 50%; margin-left: -400px;
+            }
+            #temperatura{
+                width: 250px; 
+
+            }
+            #snowman{
+                width: 350px; height: 250px;
+                box-sizing: border-box;
+            }
+            #beach{
+                width: 470px; height: 300px;
+            }
+
+        </style>
+        <script>
+            function comprovar(){
+                var temperatura= parseInt(document.getElementById("temperatura").value);
+                var resultat=document.getElementById("resultat");
+                if (temperatura<=15){
+                    resultat.innerHTML="<img src='snwmn.png' id='snowman'>"
+                }
+                else{
+                    if(temperatura<25){
+                        resultat.innerHTML="De puta mare"
+                    }
+                    else{
+                        resultat.innerHTML="<img src='beach.png' id='beach'>"
+                    }
+                }
+                
+            }
+            
+
+        </script>
+    </head>
+    <body>
+<div id="tot">
+        <label>Indica la temperatura: </label>
+        <input type="number" id="temperatura">
+    
+        <input type="button" id="boto" value="resultat" onclick="comprovar()">
+        <div id="resultat"></div>
+     
+    </div>
+    </body>
+</html>

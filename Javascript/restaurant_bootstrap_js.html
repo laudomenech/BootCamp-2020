@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Escull el teu menú - Restaurant MMGS</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: rgba(255, 252, 238, 0.774)
+           
+        }
+        .head{
+            align-items: center; justify-content: center; 
+            background-color: rgb(111, 119, 81);
+            padding: 20px;
+    
+            color: rgb(255, 255, 255);
+        }
+        .productes{
+            background-color: rgb(121, 95, 95);
+            align-items: center; justify-content: center; 
+            padding: 10px; font-style: italic;
+            margin-top: 20px;
+        }
+        .containerplats{
+            background-color:antiquewhite ;
+        }
+        .plats{
+            margin-bottom: auto;
+            height: auto;
+            background-color: rgba(255, 252, 238, 0.774);
+        }
+        #primersplats{
+            width: 300px; 
+        }
+        #fotoprod{
+            height: 84%; width: 103%;
+        }
+        .fotoprod2{
+            height: 84%; width: 103%;
+        }
+        #fotos1{
+        max-width: 100%;
+        align-items: center; justify-content: center; 
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+        }
+        #fotos{
+            max-width: 100%;
+        align-items: center; justify-content: center; 
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+        }
+        h3{
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+            background-color: antiquewhite;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        select{
+            padding: 10px;
+    background-color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+    border: 0;
+        }
+        .row{
+
+        }
+    </style>
+    <script>
+        function select_prod(){
+            var primersplats=document.getElementById('primersplats').value;
+            var fotoprod=document.getElementById('fotoprod');
+
+            ////PRIMERS PLATS////
+
+            if (primersplats=="capresse"){
+                fotoprod.innerHTML="<img src='capresse.jpg' id='fotos1'>"
+            }
+            else{
+                if(primersplats=='verdura'){
+                    fotoprod.innerHTML="<img src='verdurasplancha.jpg' id='fotos1'>"
+                }
+                else{
+                    if(primersplats=='crema'){
+                        fotoprod.innerHTML="<img src='cremita.jpg' id='fotos1'>"
+                    }
+                }
+            }
+         
+            ////SEGONS PLATS////
+            var segonsplats=document.getElementById('segonsplats').value;
+            var fotoprod2=document.getElementById('fotoprod2')
+
+            if (segonsplats=="veganburguer") {
+                fotoprod2.innerHTML="<img src='burguer.jpg' id='fotos'>"
+            }
+            else{
+                if(segonsplats=='rissoto'){
+                    fotoprod2.innerHTML="<img src='rissoto.jpg' id='fotos'>"
+                }
+                else{
+                    if(segonsplats=="pasta"){
+                        fotoprod2.innerHTML="<img src='pasta.jpg' id='fotos'>"
+                    }
+                }
+            }
+            ////POSTRES/////
+        }
+        
+    </script>
+  </head>
+  <body>
+      <div class="head row" >
+        <h1>Restaurant MMGS</h1>
+        </div>
+        <div class="productes row">
+            <h2>Personalitza el teu menú</h2>
+        </div>
+        <div class="row">
+            <div class="plats col-sm" id="primerplat">
+                <h3>Primer Plat</h3>
+                <div id="containerplats">
+                    <select id="primersplats" onchange="select_prod()">
+                        <option value="res">Escull el primer plat</option>
+                        <option value="capresse">Amanida Capresse</option>
+                        <option value="verdura">Verdures a la plancha</option>
+                        <option value="crema">Crema del día</option>
+                
+                    </select>
+                </div>
+                <div id="fotoprod"></div>
+            </div>
+
+            <div class="plats col-sm" id="segonplat">
+                <h3>Segon Plat</h3>
+                <div id="containerplats">
+                    
+                    <select id="segonsplats" onchange="select_prod()">
+                        <option value="res">Escull el segon plat</option>
+                        <option value="veganburguer">Hamburguesa Vegana</option>
+                        <option value="rissoto">Rissoto de bolets de temporada</option>
+                        <option value="pasta">Pasta fresca alla genovesse</option>
+                    </select>
+                </div>
+                <div id="fotoprod2"></div>
+            </div>
+
+            <div class="plats col-sm" id="postre">
+                <h3>Postre</h3>
+            </div>
+
+        </div>
+  </body>
+</html>

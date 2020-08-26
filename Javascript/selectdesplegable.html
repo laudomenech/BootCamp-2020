@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #container{
+                background-color: aquamarine;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 400px; height: 200px;
+            }
+            #resultat{
+                background-color: rgb(219, 219, 219);
+                width: 400px; height:200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #bici{
+                width: 100px; height: 100px;
+            }
+        </style>
+        <script>
+            function select_prod(){
+                var productes=document.getElementById('productes').value;
+                var resultat=document.getElementById('resultat');
+                if (productes=="bici"){
+                    resultat.innerHTML="<img style='max-width=80%' src='bici.jpeg' id='bici'>"
+                    
+                }
+                else {
+                    if (productes=="patins"){
+                        resultat.innerHTML="<img style='max-width=80%' src='patins.jpeg' id='patins'>"
+                    }
+                }
+            
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="container">
+        <label>Tria el teu producte :</label>
+        <select id="productes" onchange="select_prod()">
+            <option value="res"></option>
+            <option value="bici">Bicicleta</option>
+            <option value="patins">Patins</option>
+            <option value="patinet">Patinet</option>
+        </select>
+        </div>
+        <div id="resultat"></div>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #casella{
+                width: 400px;
+                height: 300px;
+                background-color: burlywood;
+                
+            }
+        </style>
+        <script>
+            var nom=document.getElementById("text_nom").value 
+            function saludar(){
+                window.alert("Hola Hola" +nom)
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id="casella">
+       <label>Nom :</label>
+       <input type="text" id="text_nom">
+       <input type="button" value="Saludar" onclick="saludar()">
+       </div>
+    </body>
+</html>

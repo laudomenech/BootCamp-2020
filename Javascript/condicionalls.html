@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Condicionals JS</title>
+    <style>
+        body{
+            background-color: rgb(52, 139, 110);
+        }
+        h1{
+            margin-top: 40px;
+            align-items: center; justify-content: center; display: flex; 
+            padding: 20px; color: white; border: 1px solid white; font-weight: 400; font-style: oblique;
+        }
+        input{
+            padding: 10px; position: absolute; left: 50%; margin-left: -100px; margin-top: 100px; width: 200px;
+        }
+    </style>
+    <script>
+        function condicio(){
+            var d=new Date() ///Aixo el que fa es recollir la data i l'hora de l'ordinador o dispositiu en el k es visualitza la web///
+            var mes=d.getMonth() ///Ens torna el núm de mes de 0 (Gener) a 11(Decembre)
+            if(mes==7){
+                window.alert("Ja es Agost, let's go to the beach")
+            }
+            else{
+                alert("Espera a que vingui a l'Agost")
+            }
+d        }
+    </script>
+  </head>
+  <body>
+
+        <h1>Condicionals</h1>
+
+
+    <input type="button" onclick="condicio()" value="Que fem avui?">
+ 
+
+    
+  </body>
+</html>
