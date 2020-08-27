@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Arays</title>
+    <style>
+        #capafoto{
+            width: 400px; height: 200px;
+        }
+    </style>
+    <script lang="javascript">
+        function triar_plat(){
+            var plats=["imgs/burguer.jpg", "imgs/cremita.jpg" , "imgs/pasta.jpg" , "imgs/capresse.jpg" ];
+            var plat=document.getElementById("plat").value;
+            var capa=document.getElementById("capafoto");
+            capa.innerHTML= "<img src="+plats[plat]+">";
+
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Restaurant Arays</h1>
+
+    <select id="plat" onchange="triar_plat()">
+        <option value="res"></option>
+        <option value="0">Opcio 1</option>
+        <option value="1">Opcio 2</option>
+        <option value="2">Opcio 3</option>
+        <option value="3">Opcio 3</option>
+    </select>
+   <div id="capafoto"></div>
+  </body>
+</html>

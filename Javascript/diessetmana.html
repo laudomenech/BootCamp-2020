@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        h1{
+            align-items: center; justify-content: center;display: flex; padding: 20px;
+        }
+    </style>
+    <title>Switch y Case</title>
+    <script>
+        function dsemana(){
+            var d=new Date();
+            var dia=d.getDay();
+            switch(dia){
+                case 0:
+                case 6:
+                    window.alert("Cap de Setmana!"); break
+                default :
+                    window.alert("Laborables");
+
+                //case 1:
+                //  window.alert("Dilluns!"); break
+                //case 2:
+                //  window.alert("Dimarts!"); break
+                //case 3:
+                //    window.alert("Dimecres!");break
+                //case 4:
+                //    alert("Dijous!");break
+                //case 5:
+                 //   alert("Divendres!");
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Dies de la Setmana</h1>
+    <input type="button" value="Dies de la Setmana" onclick="dsemana()">
+ 
+    
+  </body>
+</html>

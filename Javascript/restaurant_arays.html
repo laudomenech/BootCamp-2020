@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Restaurant Arays</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: rgba(117, 115, 9, 0.897)
+        }
+        .productes{
+            width: 900px; text-align: center; padding-left: 20px;
+            font-style: oblique; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 50pt; padding: 20px;
+            color: white; font-weight: 900;
+            position: relative; left: 600px; top: -100px;
+        }
+        .head{
+           background-color: black;
+            width: 500px;
+        }
+        .plats{
+            margin-bottom: auto;
+            height: auto;
+            background-color: rgba(143, 129, 5, 0.863);
+        }
+        #primersplats{
+            width: 300px; 
+        }
+        #fotoprod{
+            height: 84%; width: 103%;
+        }
+        .fotoprod2{
+            height: 84%; width: 103%;
+        }
+        #fotos1{
+        max-width: 100%;
+        align-items: center; justify-content: center; 
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+        }
+        #fotos{
+            max-width: 100%;
+        align-items: center; justify-content: center; 
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.33);
+        }
+        h3{
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+            background-color: white;
+            border: 2pt solid black;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+        select{
+            padding: 10px;
+    background-color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+    border: 0;
+        }
+    </style>
+    <script lang="javascript">
+
+        //PRIMERS PLATS///
+        function triar_primer(){
+            var plat=["imgs/capresse.jpg", "imgs/verdurasplancha.jpg", "imgs/cremita.jpg"]
+            var primersplats=document.getElementById("primersplats").value;
+            var capa=document.getElementById("fotoprod");
+            capa.innerHTML="<img src="+plat[primersplats]+">";
+        //SEGONS PLATS///
+        function triar_segon(){
+            var plati=["imgs/burguer.jpg", "imgs/rissoto.jpg", "imgs/pasta.jpg"];
+            var segonsplats=document.getElementById("segonsplats").value;
+            var capa2=document.getElementById("fotoprod2");
+            capa2.innerHTML="<img src="+plati[segonsplats]+">";
+        }
+        }
+
+
+
+    </script>
+  </head>
+  <body>
+    <div class="head row" >
+        <img src="logo.png" alt="logo">
+
+        </div>
+        <div class="productes row">
+            <h2>Personalitza el teu menú</h2>
+        </div>
+        <div class="row">
+            <div class="plats col-sm" id="primerplat">
+                <h3>Primer Plat</h3>
+                <div id="containerplats">
+                    <select id="primersplats" onchange="triar_primer()">
+                        <option value="res">Escull el primer plat</option>
+                        <option value="1">Amanida Capresse</option>
+                        <option value="2">Verdures a la plancha</option>
+                        <option value="3">Crema del día</option>
+                    </select>
+                </div>
+                <div id="fotoprod"></div>
+            </div>
+           
+            <div class="plats col-sm" id="segonplat">
+                <h3>Segon Plat</h3>
+                <div id="containerplats">
+                    <select id="segonsplats" onchange="triar_segon()">
+                        <option value="res">Escull el segon plat</option>
+                        <option value="4">Hamburguesa Vegana</option>
+                        <option value="5">Rissoto de bolets de temporada</option>
+                        <option value="6">Pasta fresca alla genovesse</option>
+                    </select>
+                </div>
+                <div id="fotoprod2"></div>
+            </div>
+            <div class="plats col-sm" id="postre">
+                <h3>Postres</h3>
+                <div id="containerplats">
+                    <select id="postres" onchange="triar_postre()">
+                        <option value="res">Escull el postre</option>
+                        <option value="7">Pastís de pastanaga i tronja</option>
+                    </select>
+                </div>
+            </div>
+ 
+
+  </body>
+</html>

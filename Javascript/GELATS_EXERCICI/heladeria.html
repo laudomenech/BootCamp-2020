@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Personaliza tu Helado - Heladería JAVASCRIPT</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 140px; margin-right: 140px;
+        }
+        h1,h3{
+            text-align: center;
+            padding: 10px;
+        }
+        label{
+            padding: 5px;
+        }
+        select{
+            width: 100%;
+        }
+        #selecciona{
+            font-size: 14pt;
+        }
+        .fila1{
+            margin-top: 30px;
+        }
+        .menu{
+            padding: 40px;
+            border: 1px solid black;
+            width: 300px; height: 500px;
+            margin-right: 100px; margin-left: 100px;
+            position: relative; left: 270px;
+
+        }
+        .containerfoto{
+            border: 1px solid black;
+            width: 500px; height: 600px;
+            position: relative; left: 270px;
+        }
+
+    </style>
+    <script>
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Heladería Javascript</h1>
+    <h3>Personaliza tu helado</h3>
+    <div class="fila1 row">
+        <div class="menu col-5-sm">
+            <h3 id="selecciona">Selecciona tu preferido: </h3>
+            <label>Sabor  </label>
+            <select id="sabor" onchange="">
+                <option value="nada"></option>
+                <option value="fresa">Fresa</option>
+                <option value="mora">Moras</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strax">Stracciatella</option>
+                <option value="pistacho">Pistacho</option>
+                <option value="limon">Limón y menta</option>
+                <option value="vainilla">Vainilla</option>
+            </select><br><br>
+            <label>Tipo  </label>
+            <select id="tipo" onchange="">
+                <option value="nada"></option>
+                <option value="tarrina">Tarrina</option>
+                <option value="cucurucho">Cucurucho</option>
+                <option value="baggel">Baggel</option>
+            </select> <br><br>
+            <label>Tamaño  </label>
+            <select id="tamaño" onchange="">
+                <option value="nada"></option>
+                <option value="s">"S" o 1 Bola</option>
+                <option value="m">"M" o 2 Bolas</option>
+                <option value="l">"L" o 3 Bolas</option>
+                <option value="xl">XL Sorpresa</option>
+            </select>
+        </div> 
+        <div class="containerfoto col-7-sm">
+
+
+
+        </div>       
+    </div>
+ 
+    
+  </body>
+</html>

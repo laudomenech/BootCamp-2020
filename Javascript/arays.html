@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>ARAYS !!</title>
+  </head>
+  <body>
+
+    <h1>ARAYS - Javascript</h1>
+  <script lang="javascript">
+     // var jugadors=["Joan", "Marina", "Pere", "Pol", "Anna", "Tomas"];
+       // alert("El segon jugador es " + jugadors[1]);
+
+    //var mesos=["Gener", "Febrer", "Març","Abril", "Maig", "Juny", "Juliol","Agost", "Septembre", "Octubre", "Novembre","Desembre"];
+      //var d=new Date();
+      //var mes=d.getMonth();
+      //alert("Avui es el mes d'" +mesos[mes])
+var dies=["Diumenge","Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"];
+var mesos=["Gener", "Febrer", "Març","Abril", "Maig", "Juny", "Juliol","Agost", "Septembre", "Octubre", "Novembre","Desembre"];
+
+var d=new Date();
+  var day=d.getDay();
+  var dia=d.getDate();
+  var mes=d.getMonth();
+  var any=d.getUTCFullYear();
+
+function mostrar_data(){
+  var day=d.getDay();
+  var dia=d.getDate();
+  var mes=d.getMonth();
+  var any=d.getUTCFullYear();
+  window.alert(" Avui es " + dies [day] + " dia " + day + " d " +mesos[mes] + " del " + any );
+}
+
+
+    </script> 
+    <input type="button" value="Quin dia som avui?"" onclick="mostrar_data()">
+  </body>
+</html>

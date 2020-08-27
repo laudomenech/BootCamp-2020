@@ -42,33 +42,32 @@
         }
     </style>
     <script>
-        function change_season(){
+        function change_season()
+        {
             var d=new Date(); 
             var mes=d.getMonth();
             var day=d.getDate();
             var hour=d.getHours();
             var min=d.getMinutes();
             var imatgesestacions=document.getElementById('imatgesestacions')
-            if ((mes==0)||(mes==1)||(mes==2)){
+            //HIVERN//
+            if (((mes==11)&&(day>=21))||(mes==0)||(mes==1)|| ((mes==2)&&(day<=20))){
                 imatgesestacions.innerHTML="<img src='winter.jpeg' class='fotos'>"
             }
-                else{
-                    if ((mes==2)&&(day=20)&&(hour==4)&&(min==50))
-                        {
-                        imatgesestacions.innerHTML="<img src='springg.jpg' class='fotos'>"
-                        }
-                    }
-            if ((mes==3)||(mes==4)||(mes==5)){
-                imatgesestacions.innerHTML="<img src='springg.jpg' class='fotos'>"
+            //PRIMAVERA//
+                else if (((mes==2)&&(day>20))||(mes==3)||(mes==4)||((mes==5)&&(day<20))){
+                    imatgesestacions.innerHTML="<img src='springg.jpg' class='fotos'>"
+                }
+            //ESTIU//
+                    else if (((mes==5)&&(day>=20))||(mes==6)||(mes==7)||((mes==8)&&(day<22))){
+                        imatgesestacions.innerHTML="<img src='summer.jpeg' class='fotos'>"
             }
-            if ((mes==6)||(mes==7)||(mes==8)){
-                imatgesestacions.innerHTML="<img src='summer.jpeg' class='fotos'>"
+            //TARDOR//
+                        else if (((mes==8)&&(day>=22))||(mes==9)||(mes==10)||((mes==11)&&(day<21))){
+                            imatgesestacions.innerHTML="<img src='autumn.jpeg' class='fotos'>"
             }
-            if ((mes==9)||(mes==10)||(mes==11)){
-                imatgesestacions.innerHTML="<img src='autumn.jpeg' class='fotos'>"
-            }
-            
         }
+        
     </script>
   </head>
   <body>
