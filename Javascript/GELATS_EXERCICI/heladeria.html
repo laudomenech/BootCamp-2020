@@ -23,6 +23,10 @@
         select{
             width: 100%;
         }
+        img{
+            max-width: 500px; max-height: 600px;
+            position: relative; left: 250px;
+        }
         #selecciona{
             font-size: 14pt;
         }
@@ -45,6 +49,17 @@
 
     </style>
     <script>
+        function triar_gelat(){
+        var gelats=[["imgs/tarrinafresa.jpg","imgs/cucufresa.png","imgs/bagelfresa.jpg"],
+                    ["imgs/tarrinavainilla.jpeg", "imgs/cucuvainilla.png", "imgs/bagelfresa.jpg"],
+                    ["imgs/tarrinavainilla.jpeg", "imgs/cucufresa.png", "imgs/bagelfresa.jpg"],
+                    ["imgs/tarrinachoco.png", "imgs/cucufresa.png", "imgs/bagelfresa.jpg"]]
+    
+        var sabor=document.getElementById("sabor").value;
+        var tipo=document.getElementById("tipo").value;
+        var capa=document.getElementById("containerfoto");
+        capa.innerHTML="<img src="+gelats[sabor][tipo]+">";        
+        }
 
 
     </script>
@@ -56,33 +71,34 @@
         <div class="menu col-5-sm">
             <h3 id="selecciona">Selecciona tu preferido: </h3>
             <label>Sabor  </label>
-            <select id="sabor" onchange="">
-                <option value="nada"></option>
-                <option value="fresa">Fresa</option>
-                <option value="mora">Moras</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="strax">Stracciatella</option>
-                <option value="pistacho">Pistacho</option>
-                <option value="limon">Limón y menta</option>
-                <option value="vainilla">Vainilla</option>
+            <select id="sabor" onchange="triar_gelat()">
+                <option value=""></option>
+                <option value="0">Fresa</option>
+                <option value="1">Vainilla</option>
+                <option value="2">Moras</option>
+                <option value="3">Chocolate</option>
+                <option value="4">Stracciatella</option>
+                <option value="5">Pistacho</option>
+                <option value="6">Limón y menta</option>
+                
             </select><br><br>
             <label>Tipo  </label>
-            <select id="tipo" onchange="">
-                <option value="nada"></option>
-                <option value="tarrina">Tarrina</option>
-                <option value="cucurucho">Cucurucho</option>
-                <option value="baggel">Baggel</option>
+            <select id="tipo" onchange="triar_gelat()">
+                <option value=""></option>
+                <option value="0">Tarrina</option>
+                <option value="1">Cucurucho</option>
+                <option value="2">Baggel</option>
             </select> <br><br>
             <label>Tamaño  </label>
-            <select id="tamaño" onchange="">
-                <option value="nada"></option>
-                <option value="s">"S" o 1 Bola</option>
-                <option value="m">"M" o 2 Bolas</option>
-                <option value="l">"L" o 3 Bolas</option>
-                <option value="xl">XL Sorpresa</option>
+            <select id="tamaño" onchange="triar_gelat()">
+                <option value=""></option>
+                <option value="0">"S" o 1 Bola</option>
+                <option value="1">"M" o 2 Bolas</option>
+                <option value="2">"L" o 3 Bolas</option>
+                <option value="3">XL Sorpresa</option>
             </select>
         </div> 
-        <div class="containerfoto col-7-sm">
+        <div id="containerfoto" class="col-7-sm">
 
 
 
