@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        h1{
+            text-align: center; padding: 30px;
+        }
+        #resposta{
+            width: 300px; margin-left: 10px;
+        }
+        .preguntas{
+            margin-left: 50px; margin-top: 20px; font-weight: 700;
+        }
+        #check{
+            margin-left: 10px;
+        }
+        #checkbox{
+            width: 30px; height: 20px; 
+            position: relative; left: 340px; top: -25px; border: 1px solid black;
+
+        }
+        img{
+            max-width: 100%;
+            width: 60px;
+        }
+    </style>
+    <title>Examen Inicial </title>
+  </head>
+  <body>
+    <script>
+        var respuestas=["Teorema de Pitágoras", "Badul", "Italia"]
+
+        var i=0;
+        function corregir(){
+            for (i=0; i<respuestas.length;i++){
+                       var r= document.getElementById("r"+i).value
+                        if (r==respuestas[i]){
+
+                            document.getElementById("checkbox" +i).innerHTML="<img src='imgs/yes.png'>";
+                        }
+                        else{
+                        document.getElementById("checkbox" +i).innerHTML="<img src='imgs/no.png'>";
+                   
+                }
+            }
+        }
+
+    </script>
+    <h1>Examen Inicial</h1>
+    <div id="containerpreguntas">
+        <div id="p0" class="preguntas">
+            <p>A partir de quin teorema podriem esbrinar la longitud de unes escales mecaniques?</p> 
+        
+            <input type="text" id="r0"> 
+        
+            <div id="checkbox0" class="checkbox"></div>
+        
+            
+        
+        </div>
+        
+        <div id="p1" class="preguntas">
+            <p>Quina es la capital de Gambia?</p>
+        
+            <input type="text" id="r1"> 
+            
+            <div id="checkbox1" class="checkbox"></div>
+        
+           
+        
+        </div>
+
+        <div id="p2" class="preguntas">
+            <p>¿En qué país se encuentra el río Po?</p>
+        
+            <input type="text" id="r2"> 
+            
+            <div id="checkbox2" class="checkbox"></div>
+        
+            <input type="button" id="check" value="Corregeix" onclick="corregir()">
+        
+        </div>
+    </div>
+    
+  </body>
+</html>

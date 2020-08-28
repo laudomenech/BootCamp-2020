@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+       #taula{
+           width: 600px; 
+       }
+       
+        h1{
+            text-align: center; padding: 30px;
+        }
+        td{
+            padding: 20px;
+        }
+        tr{
+            border: 1px solid black; padding: 20px;
+        }
+        
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <script>
+        function taula_multip(){
+        var i = 0;
+        var html =""; //Que es esto?!!?!?!?! string??
+        var x=document.getElementById("numero").value;
+        var capa=document.getElementById("capataules");
+       // capa.innerHTML=+capa.innerHTML+"<tr><td>" +x+ "<td>"; "<td>" +x+ "<td>"; "<td>" +i*x+ "</td></tr>";
+
+            for (i=0; i<11; i++){
+                html=html+ "<tr><td>" +x+ "</td>" + "<td>" +i+ "</td>"+ "<td>" +i*x+ "</td></tr>"
+            }
+            document.getElementById("taula").innerHTML=html;
+        }
+    </script>
+    <script>
+        capa.innerHTML
+    </script>
+
+    <h1>Taules de Multiplicar</h1>
+    <div>
+        <label for="numero">Escriu un número per veure la seva taule de multiplicació :</label>
+        <input id="numero" type="number" onclick="">
+        <input type="button" id="sendnumber" value="Mostra taula" onclick="taula_multip()">
+    </div>
+
+    <div id="capataules">
+        <table id="taula"> </table>
+    </div>
+    
+    </body>
+</html>

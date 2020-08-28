@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        #capa0, #capa1, #capa2{
+            width: 500px; height: 200px;  margin: 20px;
+            align-items: center; justify-content: center; 
+            border: 1px solid black; float: left;
+        }
+        img{
+            max-width: 80%; width: 200px;
+        }
+        #container{
+
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Arays i Bucles - Javascript!</title>
+  </head>
+  <body>
+    <h1>Arays i Bucles!</h1>
+ <script>
+     //var jugadors=[" Jugador1 ", " Jugador2 ", " Jugador3 ", " Jugador4", "  Jugador5", " Jugador6"]
+     //var i =0
+       // for(i=0; i<jugadors.length ; i++)
+        //document.write(jugadors[i]);
+        //document.write("<br>")
+
+    function mostrar_imgs(){
+        var fotos=["imgs/capresse.jpg", "imgs/rissoto.jpg", "imgs/pasta.jpg"]
+        var i=0;
+        for(i=0; i<fotos.length;i++){
+            var capa=document.getElementById('capa' +i)
+            capa.innerHTML="<img src=' "+capa[+i] +" '>";
+            capa.innerHTML="<img src=' "+fotos[i] +" '>";
+        }
+    }
+ </script>
+
+ <input type="button" value="Mostra les imatges" onclick="mostrar_imgs()">
+<div id=container class="row">
+
+ <div id="capa0" class="col-4-sm"></div>
+
+ <div id="capa1" class="col-4-sm"></div>
+
+ <div id="capa2" class="col-4-sm"></div>
+
+</div>
+  </body>
+</html>
