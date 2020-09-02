@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Hoja de Producto</title>
+    <style>
+        #background_div{
+            background-color: white;
+        }
+       
+        .hoja{
+            background-color: rgba(129, 129, 129, 0.253);
+            height: 100%;
+            width: 900px;
+            border: 2px solid black;
+            margin-top: 20px;
+
+        }
+       #navg{
+           height: 130px; width: 100%;
+           background-color: rgb(71, 102, 85);
+           box-sizing: content-box;
+           align-items: center; justify-content: center; display: flex; float: left;
+       }
+       .titulo{
+           padding: 20px;
+       }
+       .camara{
+           margin: 0;
+       }
+       #foto_camara{
+           max-width: 80%;
+           width: 400px;
+       }
+       .texto{
+           padding: 40px;
+       }
+       .buttons{
+           
+           color: black;
+           width: 200px; height: 60px; 
+           border: 0.5px solid grey;
+           background-color:white ;
+           margin: 15px;
+           font-size: 14pt;  
+       }
+       #price{
+           font-weight: 900; font-size: 19pt; align-items: right; justify-content: right; display: flex;
+       }
+       div{
+           border: 1px solid black;
+       }
+    </style>
+
+  </head>
+
+  <body>
+      <!-- JQuery CODI -->
+      <script type="text/javascript">
+          $(function(){
+            $("boto_prim").click(function(){
+                $('#background_div').css('background-color', 'black');
+            })
+
+          })
+      </script>
+
+
+
+
+
+
+    <!-- HTML CODI -->
+    <div id="background_div">
+    <div id="navg">
+        <input type="button" value="Primavera" name="primavera" class="buttons" id="boto_prim">
+        <input type="button" value="Verano" name="verano" class="buttons" id="boto_veran">
+        <input type="button" value="Otoño" name="otoño" class="buttons" id="boto_oto">
+        <input type="button" value="Invierno" name="invierno" class="buttons" id="boto_invi">
+
+    </div>
+    <div class="container hoja">
+        <div class="titulo row justify-content-md-center">
+            <h1>Hoja de Producto</h1>
+        </div>
+
+        <div class="camara container row justify-content-md-center">
+            <img id="foto_camara" src="img_product1.png">
+        </div>
+
+        <div class="texto row justify-content-md-center">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt at asperiores adipisci dolorum rem quidem debitis cumque minus nisi harum tempora reiciendis, voluptatibus labore ullam eveniet beatae soluta aut numquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quos, consequatur dolorem aperiam, tenetur minus molestias totam consequuntur voluptates atque id, est tempora magnam. Minima fugit ad adipisci illum modi. </p>
+            <p id="price">256,97 Euros</p>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+  </body>
+</html>

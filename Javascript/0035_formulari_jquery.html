@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Formulari de Contacte - Javascript y Jquery</title>
+    <style>
+        body{
+            background-color: white;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #titulo{
+            text-align: center; padding: 50px;
+            font-weight: 700; color: rgb(54, 54, 54);
+        
+        }
+        ul{
+            background-color: rgba(139, 69, 56, 0.377) ;
+            border: 1.5px solid rgb(54, 54, 54);
+            font-size: 15pt; 
+           color: white;
+            width: 550px; height: 700px; padding: 50px;
+            position: absolute; left: 50%; margin-left: -275px;
+           list-style: none;
+            
+        }
+        #text_comentari{
+            width: 80%; height: 80%;
+        }
+       
+        #boto_enviar{
+           border: 1.5px solid rgb(54, 54, 54);
+            background-color: rgba(212, 212, 212, 0.226); color: white;
+            height: 70px; width: 130px; 
+            font-size: 15pt; position: absolute; right: 50%; margin-right: -55px;
+            transition: 0.8s;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        #boto_enviar:hover{
+            background-color:white;
+            color: rgba(139, 68, 56, 0.863);
+        }
+        li{
+            padding: 20px;  width: 100%;
+        }
+        label{
+            padding: 10px;
+        }
+        .cuadres{
+            font-size: 13pt; font-weight: lighter;
+            width: 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+        $(function(){  //Funció anonima! Aixó fa que el navegador no carregi el codi fins ke s'hagui carregat l'altre html //
+            $("#boto_enviar").click(function(){
+
+                if($('#text_nom').val()=="");{
+
+                    window.alert("Completa tots els camps buits abans d'enviar");
+                    $('#text_nom').css('background-color', 'rgba(255, 0, 0, 0.201)');
+                    $("#text_nom").css('border', 'none')
+
+                }
+                if($('#text_email').val()=="");{
+                    $('#text_email').css('background-color', 'rgba(255, 0, 0, 0.201)');
+                    $("#text_email").css('border', 'none')
+                }
+                if($('#text_telefon').val()=="");{
+                    $('#text_telefon').css('background-color', 'rgba(255, 0, 0, 0.201)');
+                    $("#text_telefon").css('border', 'none')
+                }
+            })
+        // Es poden utilitzar clases per fer la feina mes rapid!!!! //
+             $(".cuadre").focus(function(){
+
+                $(this).css('background-color', 'white'); // El "this" fa que es produeixi a només l'objecte que interactues
+            })
+       
+        })
+    </script>
+
+
+    <h1 id="titulo">Formulari de Contacte</h1>
+    <form>
+    <ul id="formulari">
+        <li>
+            <label for="text_nom">Nom :</label> 
+            <input type="text" name="text_nom" id="text_nom" class="cuadre"> <br>
+        </li>
+        <li>
+            <label for="text_email">E-mail :</label>
+            <input type="email" name="text_email" id="text_email" class="cuadre"> <br>
+        </li>
+        <li>
+            <label for="telefon">Telefon :</label>
+            <input type="tel" name="text_telefon" id="text_telefon" class="cuadre"><br>
+        </li>
+        <li>
+            <label for="comentari">Comentaris :</label>
+            <textarea id="text_comentari" name="text_comentari"></textarea>
+        </li>
+
+        <input type="button" id="boto_enviar" value="Enviar">
+    </ul>
+    </form>
+ 
+   
+  </body>
+</html>

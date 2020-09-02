@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Hoja de Producto</title>
+    <style>
+        .content{
+            border: 1px solid grey; height: 900px;
+            display: block;
+            margin: auto;
+            align-items: center; justify-content: center;
+            padding: 50px;
+            box-sizing: border-box;
+            width: 800px;
+        
+        }
+        #titulo{
+            align-items: center; justify-content: center; position: absolute;
+        }
+        #container_img{
+            border: 1px solid black;
+            height: 400px; width: auto;
+            box-sizing: content-box;
+            position: absolute; top: 150px; 
+            align-items: center; justify-content: center; position: relative;
+            display: block;
+            margin: auto;
+
+            
+        }
+        #coronita{
+            display: block; 
+            margin: auto;
+           height: 100%;
+           
+        }
+        #text{
+            position: absolute; bottom: 0px; top: 600px;
+            padding: 50px;
+            border: 1px solid black;
+            width: 800px;
+            box-sizing: border-box;
+            
+        }
+       #precio{
+            position: absolute; right: 0;
+       }
+    </style>
+  </head>
+
+  <body>
+    <div class="row container-lg content">
+
+        <div class="row justify-content-center">
+            <h1 id="titulo">Hoja de Producto</h1>
+        </div>
+        
+        <div id="container_img" class="row justify-content-center">
+            <img src="img_product1.png" alt="Coronita - Cerveza" id="coronita">
+        </div>
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, neque! Molestias repellat eveniet maiores earum corporis libero qui praesentium voluptas consectetur perferendis accusantium in placeat dignissimos, voluptatibus quia, odit officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae suscipit labore est necessitatibus. Id illum possimus incidunt repellendus, quidem atque nihil delectus, veritatis iusto dicta numquam aspernatur inventore dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequatur odit fuga necessitatibus nam nobis voluptatum dolor, quam repellat dolores quae cum maxime qui voluptatibus, rerum dicta! Consectetur, laudantium inventore.</p>
+            <p id="precio">256,98</p>
+        </div>
+
+    </div>
+    
+  </body>
+</html>
