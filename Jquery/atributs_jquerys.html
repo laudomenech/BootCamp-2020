@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        #image_div{
+             margin: 0 auto; width: 400px;
+        }
+        #titulo{
+            margin: 0 auto; text-align: center; padding: 40px;
+            
+        }
+
+        .imgs{
+            width: 400px;
+        }
+        #botons{
+            align-items: center;justify-content:  center; display: flex;
+            padding: 30px;
+        }
+        .botonets{
+            width: 100px; height: 40px;
+        }
+    </style>
+    </head>
+  <body>
+    <script>
+        $(function(){
+            $('#boto1').click(function(){
+                $('#image1').attr('src', 'image2.jpg');
+            })
+            $('boto2').click(function(){
+                $('#image2').attr('src', 'image3.jpg');
+            })
+        })
+    </script>
+
+
+    <div id="titulo" ><h1>J Query</h1></div>
+
+    <div id="image_div" class="col-4-sm">
+        <img src="image1.jpg" id="image1" class="imgs">
+    </div>
+    <div id="botons"> 
+        <input type="button" id="boto1" value="Imatge 2" class="botonets">
+        <input type="button" id="boto2" value="Imatge 3" class="botonets">
+    </div>
+
+
+
+ 
+    
+  </body>
+</html>

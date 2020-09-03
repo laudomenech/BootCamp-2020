@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Images - Brian Viveros - Jquerys</title>
+    <style>
+        
+        .sheet{
+            height: 100%;
+            box-sizing: content-box;
+            width: auto;
+        }
+        #logo{
+           align-items: center; justify-content: center; position: flex;
+           margin-bottom: 20px;
+        }
+        #containerfotos{
+            max-height: 80%;
+        }
+        #fotos{
+            align-items: center; justify-content: center; position: flex;
+            box-sizing: content-box;
+        }
+        #foto1{
+            width: 456px;
+            margin: 30px;
+            border: 6px solid black;
+        }
+        .miniaturas{
+            width: 230px; 
+            position: flex; float: left;
+            height: 300px;
+
+        }
+        .fotis{
+            padding: 16px; margin-top: 14px;
+            cursor: pointer;
+        }
+       
+        
+    </style>
+  </head>
+  <body>
+    <script>
+        $(function(){
+           $('#foto2').click(function(){
+                $('#foto1').attr('src','image2.jpg');
+                $('#foto2').css("border", "2pt solid black");
+
+            })
+            $('#foto3').click(function(){
+                $('#foto1').attr('src','image3.jpg');
+                $('#foto3').css({"border": "2pt solid black"});
+    
+            })
+            $('#foto4').click(function(){
+                $('#foto1').attr('src', 'image4.jpg');
+                $('#foto4').css("border", "2pt solid black");
+            })
+            $('#foto5').click(function(){
+                $('#foto1').attr('src', 'image5.jpg');
+                $('#foto5').css("border","2pt solid black");
+            })
+        })
+    </script>
+
+
+
+
+    <div class="container sheet">
+        <div id="logo" class="row">
+            <img src="viveros_logo.png">
+            <h2>WORKS from Brian M. Viveros</h2>
+        </div>
+
+        <div class="row" id="container_fotos">
+        <div id="content_foto_parl" class=" col-md">
+            <img src="image2.jpg" id="foto1">
+        </div>
+        <div id="miniaturas" class=" col-lg">
+            <img src="image2.jpg" class="fotis miniaturas" id="foto2">
+            <img src="image3.jpg" class="fotis miniaturas" id="foto3"><br>
+            <img src="image4.jpg" class="fotis miniaturas" id="foto4">
+            <img src="image5.jpg" class="fotis miniaturas" id="foto5">
+
+        </div>
+        </div>
+    </div>
+  </body>
+</html>

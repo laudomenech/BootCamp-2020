@@ -19,9 +19,8 @@
         .hoja{
             background-color: rgba(129, 129, 129, 0.253);
             height: 100%;
-            width: 900px;
+            width: 800px;
             border: 2px solid black;
-            margin-top: 20px;
 
         }
        #navg{
@@ -55,38 +54,21 @@
        #price{
            font-weight: 900; font-size: 19pt; align-items: right; justify-content: right; display: flex;
        }
-       div{
-           border: 1px solid black;
-       }
+       
     </style>
 
   </head>
 
   <body>
-      <!-- JQuery CODI -->
-      <script type="text/javascript">
-          $(function(){
-            $("boto_prim").click(function(){
-                $('#background_div').css('background-color', 'black');
-            })
-
-          })
-      </script>
-
-
-
-
-
-
     <!-- HTML CODI -->
     <div id="background_div">
-    <div id="navg">
-        <input type="button" value="Primavera" name="primavera" class="buttons" id="boto_prim">
-        <input type="button" value="Verano" name="verano" class="buttons" id="boto_veran">
-        <input type="button" value="Otoño" name="otoño" class="buttons" id="boto_oto">
-        <input type="button" value="Invierno" name="invierno" class="buttons" id="boto_invi">
+        <div id="navg">
+            <input type="button" value="Primavera" name="primavera" class="buttons" id="boto_prim">
+            <input type="button" value="Verano" name="verano" class="buttons" id="boto_veran">
+            <input type="button" value="Otoño" name="otoño" class="buttons" id="boto_oto">
+            <input type="button" value="Invierno" name="invierno" class="buttons" id="boto_invi">
 
-    </div>
+         </div>
     <div class="container hoja">
         <div class="titulo row justify-content-md-center">
             <h1>Hoja de Producto</h1>
@@ -101,11 +83,12 @@
             <p id="price">256,97 Euros</p>
         </div>
 
-
-
-
-
     </div>
     </div>
+    <!-- JQuery CODI -->
+    <script type="text/javascript">
+        $(function())
+
+    </script>
   </body>
 </html>
