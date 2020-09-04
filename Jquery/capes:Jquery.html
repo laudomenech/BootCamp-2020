@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Hello, Jquery!</title>
+    <style>
+    .titol_color{
+        color: red;
+        font-size: 60pt;
+        font-weight: 200;
+    }
+    </style>
+  </head>
+  <body>
+    <script>
+        $(function(){
+          $('#boto_color').click(function(){
+              //$('h1').css('color','red');
+              $('h1').addClass('titol_color');
+          })
+          $('#treure_color').click(function(){
+              $('h1').removeClass('titol_color');
+          })
+          $('#toggle_color').click(function(){
+              $('h1').toggleClass('titol_color');
+          })
+        })
+    </script>
+    <div id="capa1">
+      <h1>Hello, Jquery!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, natus sequi voluptates placeat quis pariatur veniam, recusandae mollitia cum modi quia quo, laborum autem atque! Temporibus nesciunt voluptatem aspernatur modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorum, adipisci distinctio ratione voluptates illum, repellendus eligendi possimus accusantium a, facere cupiditate! Explicabo ab quisquam officiis possimus ratione odio consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt maiores vero ad alias quisquam consequuntur, perferendis nulla neque modi cum, non eos minima aliquam iste, facere ex adipisci eum. Delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro molestiae quas ad recusandae, laboriosam, molestias, pariatur veritatis accusamus unde aliquam maiores sapiente consequuntur consectetur aperiam numquam suscipit vel hic vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, excepturi quas? Deleniti, necessitatibus quia aliquid reprehenderit ab dolor placeat ullam voluptas vel assumenda dolorem, maiores eos ipsa, hic odio accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint natus accusamus adipisci vitae perferendis doloremque facere facilis nobis quibusdam animi quam corporis at, asperiores voluptatibus, perspiciatis, ad reprehenderit. Enim, quae.</p>
+    </div>
+    <br>
+    <input type="button" value="AddClass Color" id="boto_color">
+    <input type="button" value="RemoveClass Color" id="treure_color">
+    <input type="button" value="ToggleClass Color" id="toggle_color">
+
+    <!-- No posem event onclick ja que l'interceptarem desde jquery-->
+    
+  </body>
+</html>

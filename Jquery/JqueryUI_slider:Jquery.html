@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Slider with jQuery UI</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Jquery UI CDN-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <!-- Jquery css UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <style>
+       #sliders_container{
+           width: 600px; height: 400px; background-color: grey;
+           margin: 0 auto;
+            margin-top: 200px;
+            border: 1px solid black;
+            padding: 40px;
+        }
+        .results{
+            width: 45px; text-align: center;
+        }
+       #slider1{
+
+       }
+   </style>
+   
+   
+   <script>
+        $( function() {
+            $( "#slider1" ).slider({
+                range: "min",
+                min: 0,
+                max: 255,
+                value: 100,
+                slide: function (event, ui) {
+                    $("#resultat1").val ( ui.value );
+                }
+            });
+            $("#resultat1").val ($('#slider1').slider("value"));
+        } );
+
+        $( function() {
+            $( "#slider2" ).slider({
+                range: "min",
+                min: 0,
+                max: 255,
+                value: 100,
+                slide: function (event, ui) {
+                    $("#resultat2").val ( ui.value );
+                }
+            });
+            $("#resultat2").val ($('#slider2').slider("value"));
+        } );
+        $( function() {
+            $( "#slider3" ).slider({
+                range: "min",
+                min: 0,
+                max: 255,
+                value: 100,
+                slide: function (event, ui) {
+                    $("#resultat3").val ( ui.value );
+                }
+            });
+            $("#resultat3").val ($('#slider3').slider("value"));
+        } );
+    </script>
+  </head>
+  <body>
+    <div id="sliders_container">
+        <!-- SLIDER 1-->
+        <p>
+            <label for="resultat1"></label>
+            <input class="results" type="text" id="resultat1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+         </p> 
+         <div id="slider1"></div>
+         <br>
+         <!--SLIDER 2-->
+         <p>
+            <label for="resultat2"></label>
+            <input class="results" type="text" id="resultat2" readonly style="border:0; color:#f6931f; font-weight:bold;">
+         </p> 
+         <div id="slider2"></div>
+         <br>
+         <!-- SLIDER 3-->
+         <p>
+            <label for="resultat3"></label>
+            <input class="results" type="text" id="resultat3" readonly style="border:0; color:#f6931f; font-weight:bold;">
+         </p> 
+         <div id="slider3"></div>
+    </div>  
+  </body>
+</html>

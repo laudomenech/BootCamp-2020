@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Jquery UI CDN-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <title></title>
+    <style>
+        #header{
+            border: 1px solid black;
+            padding: 10px;
+             width: 100%; height: 100px;
+        }
+        .botons{
+            width: 200px; height: 70px; 
+            margin-left: 20px; margin-right: 20px;
+        }
+        #containernoticia{
+            border: 1px solid black;
+            margin-top: 60px;
+            padding: 100px;
+            width: auto;
+        }
+        h1, h3{
+            text-align: center;
+        }
+       
+    </style>
+    <script>
+        $(function(){
+            $('#boto1').click(function(){
+                $.get('https://jsonplaceholder.typicode.com/posts/1', function(data,status){
+                    $('#titol').html(data.title);
+                    $('#cuerpo').html(data.body);
+                })
+            })
+            $('#boto2').click(function(){
+                $.get('https://jsonplaceholder.typicode.com/posts/2', function(data,status){
+                    $('#titol').html(data.title);
+                    $('#cuerpo').html(data.body);
+                })
+            })
+            $('#boto3').click(function(){
+                $.get('https://jsonplaceholder.typicode.com/posts/3', function(data,status){
+                    $('#titol').html(data.title);
+                    $('#cuerpo').html(data.body);
+                })
+            })
+        })
+    </script>
+  </head>
+  <body>
+      <div id="header">
+    <input class="botons" type="button" id="boto1" value="Notícia seguent">
+    <input class="botons" type="button" id="boto2" value="Noticia 2">
+    <input class="botons" type="button" id="boto3" value="Noticia 3">
+        </div>
+        <div id="containernoticia">
+            <h1 id="titol">Títol de la noticia</h1>
+            <p id="cuerpo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione illum tempore iste ipsa quis reiciendis, rerum repellendus deleniti. Exercitationem, itaque totam in deserunt veniam magni minus consequuntur odit nostrum repellat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ipsa ducimus impedit amet illum nemo sint, dolores voluptate maiores. Rerum ipsum numquam molestias ullam! Eaque quidem eum aliquid aperiam voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur unde sequi possimus. In, rerum porro natus expedita tempore fugit laborum ab maxime dignissimos nemo nesciunt voluptate, maiores, asperiores magni ipsam!</p>
+        </div>
+  </body>
+</html>

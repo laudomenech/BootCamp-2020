@@ -44,6 +44,9 @@
             padding: 16px; margin-top: 14px;
             cursor: pointer;
         }
+        .borde{
+            border: 2pt solid black;
+        }
        
         
     </style>
@@ -53,21 +56,23 @@
         $(function(){
            $('#foto2').click(function(){
                 $('#foto1').attr('src','image2.jpg');
-                $('#foto2').css("border", "2pt solid black");
+                $('#foto2').addClass('.borde');
+                else $('.borde').removeClass;
+
 
             })
             $('#foto3').click(function(){
                 $('#foto1').attr('src','image3.jpg');
-                $('#foto3').css({"border": "2pt solid black"});
+             //   $('#foto3').css({"border": "2pt solid black"});
     
             })
             $('#foto4').click(function(){
                 $('#foto1').attr('src', 'image4.jpg');
-                $('#foto4').css("border", "2pt solid black");
+             //   $('#foto4').css("border", "2pt solid black");
             })
             $('#foto5').click(function(){
                 $('#foto1').attr('src', 'image5.jpg');
-                $('#foto5').css("border","2pt solid black");
+              //  $('#foto5').css("border","2pt solid black");
             })
         })
     </script>

@@ -87,7 +87,15 @@
     </div>
     <!-- JQuery CODI -->
     <script type="text/javascript">
-        $(function())
+        $(function(){
+            var d = new Date();
+            var dia = d.getDate();
+            var mes = d.getMonth();
+            var hora = d.getHours();
+                if ((mes == 11 && (((dia >= 21) && (hora >= 4)) || dia > 21)) || (mes == 0) || (mes == 1) || (mes == 2 && (((dia<= 21) && (hora <4)) || dia < 21))){
+                    $("")
+                }
+        })
 
     </script>
   </body>

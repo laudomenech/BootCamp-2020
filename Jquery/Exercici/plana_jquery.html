@@ -15,9 +15,42 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     
     <title>Hello, world!</title>
+    <style>
+        body{
+            background-color: cadetblue; 
+        }
+        #container{
+            background-color: cadetblue; height: 100%;
+        }
+        #capa1{
+           width:800px; height: 600px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        #capaboto{
+            border: 1px solid black;
+            position: absolute; right: 50%; margin-right: -95px; top: 0;
+        }
+        #button{
+            width: 180px; height: 80px;
+            font-size: 17pt;
+            
+        }
+    </style>
+   <script>
+        $(function(){
+             $('#button').click(function(){
+             $('#capa1').load('info.html');
+            })
+        })
+    </script>
   </head>
   <body>
-
-    
+<div id="container">
+    <div id="capaboto"><input type="button" value="button" id="button"></div>
+    <div id="capa1"></div> 
+</div>   
   </body>
 </html>
