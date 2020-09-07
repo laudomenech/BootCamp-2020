@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Jquery UI CDN-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+   <style>
+       #capa1{
+           width: 600px; height: 300px;
+       }
+       #button{
+           width: 160px; height: 80px; ;
+            border: 2px solid grey;   transition: 0.5s;    }
+        #button:hover{
+            background-color: yellowgreen
+        }
+   </style>
+  
+  </head>
+  <body>
+
+      <input type="button" value="Extract Photo" id="button">
+      <div id="capa1"></div>
+
+      <script>
+        $(function(){
+            $('#button').click(function(){
+                $.get('https://jsonplaceholder.typicode.com/photos/1', function(data, status){ //Status : failure o success //
+                    window.alert(data.title);
+                })
+            })
+        })
+
+    </script>
+    </body>
+</html>
