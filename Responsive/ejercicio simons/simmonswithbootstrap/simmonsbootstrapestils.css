@@ -42,5 +42,18 @@ p{
     font-size: 16px;
 }
 
-@media screen and (max-width:760px)
+
+
+.nextstep{
+    height: 134px; 
+    width: 100%;
+    background-color: #00A881;
     
+
+}
+#taketitle{
+    padding: 20px;
+    height: 121px;
+    max-width: 75rem;
+}
+

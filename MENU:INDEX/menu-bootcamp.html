@@ -1,23 +1,161 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Menú BootCamp</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="estilsmenubootcamp.css">
-
-    </head>
-    <body>
-    <div id="background">
-        <div class="headerwrap">
-            <div id="header">
-                <h1>Índex Exercicis Bootcamp</h1>
-                <h2>Programació HTML/CSS/Javascript</h2>
-            </div>
-        </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Menú BootCamp</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Jquery UI CDN-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <style>
+        .video-intro{
+            width: 100%;
+            height: 100%;
+        }
+       
       
-        <div>
+        
+        
+        .centro{
+            position: absolute; top: 50%;
+        }
+        .mask{
+            width: 100%;
+            height: auto;
+        }
+        .fullpage{
+            width: 100%;
+        }
+        #showmenu{
+            display: inline;
+            font-size: 15pt;
+            border: 2px solid black;
+            margin-top: 30px;
+        }
+        #menubootcamp{
+            background-color: black;
+            width: 70%;
+            height: 100%;
 
-       </div>
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- Main navigation -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto smooth-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-offset="90">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features" data-offset="90">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services" data-offset="90">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#opinions" data-offset="30">Opinions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team" data-offset="90">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+              </li>
+            </ul>
+            <!-- Social Icon  -->
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fab fa-facebook-f light-green-text-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fab fa-twitter light-green-text-2"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="fas fa-instagram light-green-text-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <!-- Full Page Intro -->
+      <div class="view fullpage">
+        <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
+          <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+        </video>
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-gradient align-items-center centro">
+          <!-- Content -->
+          <div class="container px-md-3 px-sm-0">
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+              <!--Grid column-->
+              <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Web Programming Introduction </h3>
+                <hr class="hr-light my-4 w-75">
+                <h4 class="subtext-header mt-2 mb-4">BootCamp 2020 - Fundació Esplai - Cambra de Comerç de Girona</h4>
+                <a href="#!" class="btn btn-rounded btn-outline-white" id="showmenu">
+                  <i class="fas fa-home"></i> Show Menu
+                </a>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+      <!-- Full Page Intro -->
+    </header>
+</div>
+
+    <!-- Main navigation -->
+    <!--Main Layout-->
+    <main>
+      
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      
+
+    </main>
+    <!--Main Layout-->
+
+
+    <div id="menubootcamp" class="container">
+        <div class="contentmenu">
+    
+        </div>
+    
     </div>
-    </body>
+  
+</body>
 </html>
